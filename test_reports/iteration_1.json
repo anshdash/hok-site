@@ -1,0 +1,23 @@
+{
+  "summary": "Frontend-only testing of 'House of Kriyā' landing page. All required data-testid elements are present and visible; hero, context, status (3 items), philosophy, CTA, and footer content match the spec; Devanagari accent क्रिया renders; background is soft beige rgb(247,245,240); CTA href starts with mailto:ansh@houseofkriya.com; footer email href = mailto:ansh@houseofkriya.com; no horizontal scroll on 375x812 mobile; no console errors captured; all 9 data-reveal elements become visible during natural scroll-through.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Scroll reveal uses IntersectionObserver with rootMargin '0px 0px -40px 0px' and threshold 0.15 — works correctly with natural scrolling; an instant scrollTo(bottom) can skip intermediate reveals (not a real-user issue, just a test nuance).",
+    "Landing.jsx is a single 308-line file — acceptable for a one-page landing; if more sections are added, consider splitting Nav/Hero/Context/Status/Philosophy/CTA/Footer into separate files.",
+    "The 'Made with Emergent' dev badge overlaps the footer email on some viewports (it's the emergent preview wrapper, not app code)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Pure static landing page. All required data-testids verified (landing-page, hero-title, hero-subtitle, devanagari-accent, context-headline, context-body, status-heading, status-item-1..3, philosophy-line-1/2, cta-headline, cta-build-button, footer-brand, footer-email). CTA mailto and footer mailto both resolve correctly. No backend involved.",
+  "rca of the issue": "N/A - no issues found"
+}
