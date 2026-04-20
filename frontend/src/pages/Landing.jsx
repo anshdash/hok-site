@@ -106,7 +106,31 @@ const Context = () => (
         data-testid="context-section"
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-            <div className="md:col-span-4 hidden md:block" data-reveal aria-hidden="true"></div>
+            <div
+                className="md:col-span-4 hidden md:flex items-start justify-start"
+                data-reveal
+                aria-hidden="true"
+            >
+                <svg
+                    viewBox="0 0 160 180"
+                    className="w-28 lg:w-36 text-[color:var(--kriya-accent)]"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    data-testid="context-house-mark"
+                >
+                    {/* Torana-inspired house mark */}
+                    <path d="M20 170 L20 80" />
+                    <path d="M140 170 L140 80" />
+                    <path d="M20 80 Q80 0 140 80" />
+                    <path d="M55 170 L55 112 Q80 64 105 112 L105 170" />
+                    <path d="M80 10 L80 22" />
+                    <circle cx="80" cy="34" r="2.2" fill="currentColor" stroke="none" />
+                    <path d="M12 170 L148 170" strokeWidth="1" />
+                </svg>
+            </div>
             <div className="md:col-span-8" data-reveal>
                 <p
                     className="font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-[color:var(--kriya-primary)]"
@@ -197,7 +221,35 @@ const Philosophy = () => (
         data-testid="philosophy-section"
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-            <div className="md:col-span-4 hidden md:block" data-reveal aria-hidden="true"></div>
+            <div
+                className="md:col-span-4 hidden md:flex items-start justify-start"
+                data-reveal
+                aria-hidden="true"
+            >
+                <svg
+                    viewBox="0 0 180 180"
+                    className="w-32 lg:w-40 text-[color:var(--kriya-accent)] kriya-spin-slow"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                    strokeLinecap="round"
+                    data-testid="philosophy-chakra-mark"
+                >
+                    {/* Chakra / wheel of action */}
+                    <circle cx="90" cy="90" r="74" />
+                    <circle cx="90" cy="90" r="52" />
+                    <circle cx="90" cy="90" r="28" />
+                    <line x1="90" y1="12" x2="90" y2="168" />
+                    <line x1="12" y1="90" x2="168" y2="90" />
+                    <line x1="35" y1="35" x2="145" y2="145" />
+                    <line x1="145" y1="35" x2="35" y2="145" />
+                    <line x1="90" y1="22" x2="90" y2="34" strokeWidth="1.5" />
+                    <line x1="90" y1="146" x2="90" y2="158" strokeWidth="1.5" />
+                    <line x1="22" y1="90" x2="34" y2="90" strokeWidth="1.5" />
+                    <line x1="146" y1="90" x2="158" y2="90" strokeWidth="1.5" />
+                    <circle cx="90" cy="90" r="3" fill="currentColor" stroke="none" />
+                </svg>
+            </div>
             <div className="md:col-span-8" data-reveal>
                 <p
                     className="font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-[color:var(--kriya-primary)]"

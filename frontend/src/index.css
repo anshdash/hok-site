@@ -83,6 +83,26 @@ body {
     }
 }
 
+@keyframes kriyaSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.kriya-spin-slow {
+    animation: kriyaSpin 80s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .kriya-spin-slow {
+        animation: none;
+    }
+}
+
 .kriya-reveal {
     opacity: 1;
     animation: none;
