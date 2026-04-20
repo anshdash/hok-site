@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/hok-site/static/css/main.1d62c8bd.css",
-    "main.js": "/hok-site/static/js/main.3bfe76fb.js",
-    "index.html": "/hok-site/index.html",
-    "main.1d62c8bd.css.map": "/hok-site/static/css/main.1d62c8bd.css.map",
-    "main.3bfe76fb.js.map": "/hok-site/static/js/main.3bfe76fb.js.map"
+    "main.css": "/static/css/main.1d62c8bd.css",
+    "main.js": "/static/js/main.f02923d8.js",
+    "index.html": "/index.html",
+    "main.1d62c8bd.css.map": "/static/css/main.1d62c8bd.css.map",
+    "main.f02923d8.js.map": "/static/js/main.f02923d8.js.map"
   },
   "entrypoints": [
     "static/css/main.1d62c8bd.css",
-    "static/js/main.3bfe76fb.js"
+    "static/js/main.f02923d8.js"
   ]
 }
