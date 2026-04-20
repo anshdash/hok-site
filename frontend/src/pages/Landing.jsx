@@ -103,7 +103,7 @@ const Context = () => (
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div className="md:col-span-4" data-reveal>
-                <SectionLabel testid="context-label">01 — Context</SectionLabel>
+                <SectionLabel testid="context-label">Context</SectionLabel>
             </div>
             <div className="md:col-span-8" data-reveal>
                 <p
@@ -154,7 +154,7 @@ const Focus = () => (
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div className="md:col-span-4" data-reveal>
-                <SectionLabel testid="focus-label">02 — Focus</SectionLabel>
+                <SectionLabel testid="focus-label">Focus</SectionLabel>
                 <h2
                     className="mt-6 font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-[color:var(--kriya-primary)]"
                     data-testid="focus-heading"
@@ -190,44 +190,6 @@ const Focus = () => (
     </section>
 );
 
-const Status = () => (
-    <section
-        className="py-20 md:py-28 lg:py-36 border-t border-[color:var(--kriya-border)]"
-        data-testid="status-section"
-    >
-        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-            <div className="md:col-span-4" data-reveal>
-                <SectionLabel testid="status-label">03 — Status</SectionLabel>
-                <h2
-                    className="mt-6 font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-[color:var(--kriya-primary)]"
-                    data-testid="status-heading"
-                >
-                    Currently in motion.
-                </h2>
-            </div>
-            <div className="md:col-span-8 self-end" data-reveal>
-                <ul
-                    className="space-y-3 md:space-y-4 font-body text-base md:text-lg text-[color:var(--kriya-secondary)]"
-                    data-testid="status-list"
-                >
-                    <li className="flex items-start gap-4" data-testid="status-item-1">
-                        <span className="mt-[0.6em] w-1.5 h-1.5 rounded-full bg-[color:var(--kriya-primary)] shrink-0"></span>
-                        <span>A few things in development.</span>
-                    </li>
-                    <li className="flex items-start gap-4" data-testid="status-item-2">
-                        <span className="mt-[0.6em] w-1.5 h-1.5 rounded-full bg-[color:var(--kriya-primary)] shrink-0"></span>
-                        <span>Early partnerships forming.</span>
-                    </li>
-                    <li className="flex items-start gap-4" data-testid="status-item-3">
-                        <span className="mt-[0.6em] w-1.5 h-1.5 rounded-full bg-[color:var(--kriya-primary)] shrink-0"></span>
-                        <span>More coming soon.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-);
-
 const Philosophy = () => (
     <section
         className="py-20 md:py-28 lg:py-36 border-t border-[color:var(--kriya-border)]"
@@ -236,7 +198,7 @@ const Philosophy = () => (
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div className="md:col-span-4" data-reveal>
                 <SectionLabel testid="philosophy-label">
-                    04 — Philosophy
+                    Philosophy
                 </SectionLabel>
             </div>
             <div className="md:col-span-8" data-reveal>
@@ -276,7 +238,7 @@ const CTA = () => (
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
             <div className="max-w-3xl" data-reveal>
-                <SectionLabel testid="cta-label">05 — Work with us</SectionLabel>
+                <SectionLabel testid="cta-label">Work with us</SectionLabel>
                 <p
                     className="mt-6 md:mt-8 font-display font-semibold text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-[color:var(--kriya-primary)]"
                     data-testid="cta-headline"
@@ -316,10 +278,10 @@ const Footer = () => (
                     House of Kriyā
                 </p>
                 <p
-                    className="mt-1.5 font-body text-xs tracking-[0.2em] uppercase text-[color:var(--kriya-accent)]"
+                    className="mt-1.5 font-body text-xs tracking-[0.18em] uppercase text-[color:var(--kriya-accent)]"
                     data-testid="footer-tagline"
                 >
-                    In motion · MMXXV
+                    Currently in motion — more coming soon.
                 </p>
             </div>
 
@@ -349,7 +311,6 @@ export default function Landing() {
             <Hero />
             <Context />
             <Focus />
-            <Status />
             <Philosophy />
             <CTA />
             <Footer />
