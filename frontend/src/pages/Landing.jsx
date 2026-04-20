@@ -82,18 +82,22 @@ const Hero = () => (
                 >
                     We&rsquo;re building.
                 </p>
+
+                <div
+                    className="mt-8 md:mt-10 inline-flex items-center gap-2.5 rounded-full border border-[color:var(--kriya-border)] bg-[color:var(--kriya-surface)] pl-3 pr-4 py-1.5"
+                    data-testid="hero-status-pill"
+                >
+                    <span className="relative flex h-2 w-2">
+                        <span className="absolute inline-flex h-full w-full rounded-full bg-[color:var(--kriya-primary)] opacity-40 animate-[kriyaPing_2s_cubic-bezier(0,0,0.2,1)_infinite]"></span>
+                        <span className="relative inline-flex h-2 w-2 rounded-full bg-[color:var(--kriya-primary)]"></span>
+                    </span>
+                    <span className="font-body text-[11px] md:text-xs tracking-[0.18em] uppercase text-[color:var(--kriya-primary)]">
+                        In motion — more coming soon
+                    </span>
+                </div>
             </div>
         </div>
     </section>
-);
-
-const SectionLabel = ({ children, testid }) => (
-    <p
-        className="font-body font-medium text-[11px] tracking-[0.24em] uppercase text-[color:var(--kriya-accent)]"
-        data-testid={testid}
-    >
-        {children}
-    </p>
 );
 
 const Context = () => (
@@ -102,9 +106,7 @@ const Context = () => (
         data-testid="context-section"
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-            <div className="md:col-span-4" data-reveal>
-                <SectionLabel testid="context-label">Context</SectionLabel>
-            </div>
+            <div className="md:col-span-4 hidden md:block" data-reveal aria-hidden="true"></div>
             <div className="md:col-span-8" data-reveal>
                 <p
                     className="font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-[color:var(--kriya-primary)]"
@@ -154,9 +156,8 @@ const Focus = () => (
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div className="md:col-span-4" data-reveal>
-                <SectionLabel testid="focus-label">Focus</SectionLabel>
                 <h2
-                    className="mt-6 font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-[color:var(--kriya-primary)]"
+                    className="font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-[color:var(--kriya-primary)]"
                     data-testid="focus-heading"
                 >
                     What we&rsquo;re working across.
@@ -196,11 +197,7 @@ const Philosophy = () => (
         data-testid="philosophy-section"
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-            <div className="md:col-span-4" data-reveal>
-                <SectionLabel testid="philosophy-label">
-                    Philosophy
-                </SectionLabel>
-            </div>
+            <div className="md:col-span-4 hidden md:block" data-reveal aria-hidden="true"></div>
             <div className="md:col-span-8" data-reveal>
                 <p
                     className="font-display font-semibold text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-[color:var(--kriya-primary)]"
@@ -238,9 +235,8 @@ const CTA = () => (
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
             <div className="max-w-3xl" data-reveal>
-                <SectionLabel testid="cta-label">Work with us</SectionLabel>
                 <p
-                    className="mt-6 md:mt-8 font-display font-semibold text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-[color:var(--kriya-primary)]"
+                    className="font-display font-semibold text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-[color:var(--kriya-primary)]"
                     data-testid="cta-headline"
                 >
                     Have something worth building? Let&rsquo;s build it together.
