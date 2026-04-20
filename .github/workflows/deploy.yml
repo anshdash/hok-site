@@ -17,10 +17,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: frontend
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -33,9 +29,11 @@ jobs:
           cache-dependency-path: frontend/yarn.lock
 
       - name: Install dependencies
+        working-directory: frontend
         run: yarn install --frozen-lockfile
 
       - name: Build
+        working-directory: frontend
         run: yarn build
         env:
           CI: false
@@ -44,7 +42,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend/build
+          publish_dir: frontend/build
           publish_branch: gh-pages
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
