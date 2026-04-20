@@ -107,13 +107,13 @@ const Context = () => (
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div
-                className="md:col-span-4 hidden md:flex items-start justify-start"
+                className="md:col-span-4 flex items-start justify-start mb-2 md:mb-0"
                 data-reveal
                 aria-hidden="true"
             >
                 <svg
                     viewBox="0 0 160 180"
-                    className="w-28 lg:w-36 text-[color:var(--kriya-accent)]"
+                    className="w-20 md:w-28 lg:w-36 text-[color:var(--kriya-accent)]"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="1"
@@ -222,13 +222,13 @@ const Philosophy = () => (
     >
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div
-                className="md:col-span-4 hidden md:flex items-start justify-start"
+                className="md:col-span-4 flex items-start justify-start mb-2 md:mb-0"
                 data-reveal
                 aria-hidden="true"
             >
                 <svg
                     viewBox="0 0 180 180"
-                    className="w-32 lg:w-40 text-[color:var(--kriya-accent)] kriya-spin-slow"
+                    className="w-24 md:w-32 lg:w-40 text-[color:var(--kriya-accent)] kriya-spin-slow"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="1"
