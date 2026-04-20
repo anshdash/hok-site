@@ -1,0 +1,53 @@
+{
+  "theme": "LIGHT",
+  "archetype": "1 (Organic & Earthy)",
+  "design_philosophy": "A premium, text-driven holding page that relies on elegant typography, rigorous grid alignment, and generous whitespace. It communicates quiet confidence. Minimal but thoughtful animations (only fade-ins/slight translates) will be used. The background is a soft beige, text is dark charcoal.",
+  "colors": {
+    "background": "#F7F5F0",
+    "surface": "#F2EFE8",
+    "primary": "#1C1C1A",
+    "secondary": "#5C5C5A",
+    "border": "#E5E1D8",
+    "accent": "#9E9D99"
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond",
+    "body_font": "Manrope",
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl tracking-tighter leading-none font-light",
+      "h2": "text-3xl md:text-4xl tracking-tight leading-tight font-light",
+      "h3": "text-xl md:text-2xl tracking-tight font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-secondary",
+      "caption": "text-sm tracking-widest uppercase font-semibold text-accent"
+    }
+  },
+  "layout_spacing": {
+    "container": "max-w-5xl mx-auto px-6 md:px-12 lg:px-24",
+    "section_gap": "py-24 md:py-32 lg:py-48",
+    "item_gap": "gap-8 md:gap-12",
+    "grid": "grid-cols-1 md:grid-cols-12"
+  },
+  "components": {
+    "button": "bg-transparent border border-primary text-primary hover:bg-primary hover:text-[#F7F5F0] transition-colors duration-300 rounded-full px-8 py-4 font-body text-sm tracking-wide",
+    "card": "N/A - this is a minimal layout, using open space instead of containers.",
+    "links": "underline decoration-accent underline-offset-4 hover:decoration-primary transition-colors duration-300"
+  },
+  "motion": {
+    "global_transition": "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    "scroll_reveal": "initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }"
+  },
+  "icons_assets": {
+    "icon_library": "lucide-react",
+    "logo_treatment": "Text-based logo 'House of Kriyā' in Cormorant Garamond, subtle.",
+    "images": []
+  },
+  "special_instructions": [
+    "Import Cormorant Garamond and Manrope from Google Fonts in the HTML head or global CSS.",
+    "Include a subtle Sanskrit/Devanagari accent for 'Kriyā' (क्रिया) - perhaps floating lightly in the background of the hero section or positioned delicately next to the main title in a lighter opacity (e.g., text-accent).",
+    "Use Framer Motion for very subtle entrance animations on scroll. No complex sequences.",
+    "The 'Let's build' CTA must use a mailto:ansh@houseofkriya.com link.",
+    "Do NOT use pure white or pure black. Always use the specified palette colors.",
+    "Add 'data-testid' to all interactive elements.",
+    "Use <section> and native HTML tags rather than pre-built UI cards for a bespoke layout feel."
+  ]
+}
