@@ -1,0 +1,23 @@
+{
+  "summary": "Frontend-only verification of the House of Kriyā landing-page redesign. All 12 review checks passed: landing loads, header has only brand-mark (no 'In Motion' pill), no 'EST. 2025' eyebrow, hero title/subtitle/devanagari accent correct, Context headline correct, NEW focus-section renders with 5 expected items (Consumer & Brands, Software & Apps, IP & Experiences, Partnerships & Market Entry, Publishing & Distribution), Status section heading 'Currently in motion.' with 3 items, Philosophy lines 1 & 2 plus sanskrit block ('क्रिया से सृजन।' + 'Creation through action.'), CTA headline contains 'building' and 'together' with cta-build-button text 'Let's build.' and mailto href, Footer brand 'House of Kriyā' present, footer-email-button 'Get in touch' with mailto href, old data-testid='footer-email' absent, hero font-family resolves to Manrope (sans-serif), no horizontal scroll at 1440x900 desktop or 375x812 mobile, and zero console errors.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Unused import: 'Mail' icon is imported in Landing.jsx (line 2) and used only in footer button. CSS imports kriyaFadeUp keyframe and helper classes (kriya-reveal, kriya-delay-1..6) that appear unused after redesign — consider cleanup.",
+    "EMAIL constant is duplicated as raw mailto string in CTA (URL-encoded) and Footer (plain). Could be centralised in a small helper for consistency.",
+    "Footer tagline still reads 'In motion · MMXXV' — note the requirement removed the header pill but 'in motion' phrasing remains in footer tagline (per spec it's only the header pill that should be removed, so this is acceptable; flagging for visibility)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Landing page is a single static React route at '/'. All section data-testids in Landing.jsx are stable. Frontend public URL: https://kriya-motion.preview.emergentagent.com. No backend tests required (no API calls). Hero renders 'House of\\nKriyā.' (with line break), so substring matching on hero-title should account for newline.",
+  "rca of the issue": "N/A — all redesign requirements verified passing."
+}

@@ -41,12 +41,13 @@ body {
 }
 
 /* Font utility classes */
-.font-serif-display {
-    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+.font-display {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
     font-feature-settings:
         "kern" 1,
-        "liga" 1,
-        "dlig" 1;
+        "ss01" 1,
+        "ss02" 1;
+    letter-spacing: -0.035em;
 }
 
 .font-body {
@@ -54,8 +55,8 @@ body {
 }
 
 .font-devanagari {
-    font-family: "Noto Serif Devanagari", "Cormorant Garamond", serif;
-    font-weight: 300;
+    font-family: "Noto Serif Devanagari", serif;
+    font-weight: 400;
 }
 
 /* Subtle fade-in animation */
