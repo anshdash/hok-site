@@ -297,6 +297,8 @@ const CTA = () => (
                 <div className="mt-10 md:mt-14">
                     <a
                         href={`mailto:${EMAIL}?subject=Let%27s%20build%20%E2%80%94%20House%20of%20Kriy%C4%81`}
+                        target="_top"
+                        rel="noopener"
                         className="group inline-flex items-center gap-3 rounded-full bg-[color:var(--kriya-primary)] px-8 py-4 font-body font-medium text-sm tracking-wide text-[color:var(--kriya-bg)] transition-transform duration-300 hover:-translate-y-0.5"
                         data-testid="cta-build-button"
                     >
@@ -335,6 +337,8 @@ const Footer = () => (
 
             <a
                 href={`mailto:${EMAIL}`}
+                target="_top"
+                rel="noopener"
                 className="group inline-flex items-center gap-3 rounded-full border border-[color:var(--kriya-primary)] bg-transparent px-6 py-3 font-body font-medium text-sm tracking-wide text-[color:var(--kriya-primary)] transition-colors duration-300 hover:bg-[color:var(--kriya-primary)] hover:text-[color:var(--kriya-bg)]"
                 data-testid="footer-email-button"
                 aria-label={`Email ${EMAIL}`}
